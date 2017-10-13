@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Rock Paper Scissors Pseudocode</title>
+		<link rel="stylesheet" href="bootstrap.css">
+	</head>
+	<body>
+
+		<div class="container">
+
+			<div class="game">
+		
+			  	<h3>1. Computer chooses band</h3>
+			  	<h3>2. Computer presents photo associated with band</h3>			  
+			  	<h3>3. Computer sets and displays wins to 0 </h3>
+			  	<h3>4. Computer sets and displays empty band name - with "blank spaces" for each letter of the name</h3>
+			  	<h3>5. Computer sets and displays unmatched letter guesses as blank </h3>
+			  	<h3>6. Computer sets and displays number of guesses left to 12</h3>
+				<h3>7. > Input/Listener > User guesses letter by choosing any letter or number on keyboard</h3>
+						<ul>
+							<li><h4> If user types / then quit</h4></li>
+						</ul>
+				<h3>8. < Eval > Computer determines if user's letter matches any letter's in band name</h3>
+					<ul>
+						<li><h4>8.1 Match(s) - If user letter matches band letter(s) then...</h4></li>
+							<ul>
+								<li><h4> Computer updates display of band name (4)</h4></li>
+							</ul>
+						 
+						 <li><h4>8.2 No matches - If user letter does not match a band letter then...</h4></li>
+						 	<ul>
+						 		<li><h4> Computer updates display of unmatched letter (5)</h4></li>
+							</ul>	
+					</ul>
+				<h3>9. < Eval > If band name's letters are all filled in then...</h3>
+					<ul>
+						<li><h4> Add a win (3)</h4></li>
+						<li><h4> Go to Next Round (or end)</h4></li>
+					</ul>
+				<h3>10. < Eval > If the total number of guesses left is 0 then...</h3>
+					<ul>
+						<li><h4> Go to Next Round (or end) and load next</h4></li>
+					</ul>
+			</div>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hangmann</title>
+</head>
+
+<body>
+<div id="game">
+    <p>Press any key to start playing!</p>
+  </div>
+
+  <script type="text/javascript">
+  	// Set band names
+  	var bands = ["devo", "bananarama"];
+  	var band1Array = Array.from(bands[0]);
+  	var band2Array = Array.from(bands[1]);
+
+	// Set variables
+  	var userWins = 0;
+  	var userLetter;
+  	var userLettersGuessed =[];
+
+  	var html = "<p> " + bands.join(' ') + "</p> " +
+  	 "<p> " + band1Array.join(' ') + "</p> "
+    // Set the inner HTML contents of the #game div to our html string
+    document.querySelector("#game").innerHTML = html;
+
+</script>
+</body>
+</html>

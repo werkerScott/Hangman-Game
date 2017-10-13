@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Turning an array string into another array made out of letters</title>
+</head>
+
+<body>
+<div id="game">
+    <p>Press any key to start playing!</p>
+  </div>
+
+  <script type="text/javascript">
+  	
+  	function myMain () {
+  		// Set band names
+  		var bands = ["devo", "bananarama"];
+
+  		// Create new array with a slot with each letter from band name
+
+  		var band1 = Array.from(bands[0]);
+  		var band2 = Array.from(bands[1]);
+
+		// Create new "empty" arrays that have underscores in slots for each letter of band
+		var band1Empty = emptyBand1 (band1.slice(0));
+  		var band2Empty = emptyBand2 (band2.slice(0));
+
+
+	  	// Set other variables
+	  	// var userWins = 0;
+	  	// var userLetter;
+	  	// var userLettersGuessed =[];
+
+	  	// Empty the arrays helper
+	  	function emptyBand1 (x) {
+	  		for (i=0; i<x.length; i++) {
+	  			x[i]="_";
+	  		}
+	  		return x;
+	  	};
+
+	  	function emptyBand2 (x) {
+	  		for (i=0; i<x.length; i++) {
+	  			x[i]="_";
+	  		}
+	  		return x;
+	  	};
+
+
+	  	var html = "<p> bands: " + bands + "</p> " +
+	  	 "<p> band 1: " + band1.join(' ') + "</p> " +
+	  	 "<p> band 2: " + band2.join(' ') + "</p> " 
+	  	 + "<p> band1Empty: " + band1Empty.join(' ') + "</p> " +
+	  	 "<p> band2Empty:" + band2Empty.join(' ') + "</p> "+
+	  	 "<p> band2Empty[1]: " + band2Empty[1] + "</p> " +
+	  	 "<p> band 1: " + band1.join(' ') + "</p> " +
+	  	 "<p> band 2: " + band2.join(' ') + "</p> " 
+	  	 ;
+	    // Set the inner HTML contents of the #game div to our html string
+	    document.querySelector("#game").innerHTML = html;
+
+	}
+	
+
+	myMain ();
+
+</script>
+</body>
+</html>
