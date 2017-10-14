@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  text-decoration:none;
+}
+
+body { 
+	height: 100%; 
+	background:#fff;
+}
+
+.wrapper {
+width:80%;
+margin: auto;
+text-align:center;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#blank-answer {
+	font-size: 2.5em;
+	height:2.5em;
+
+}
+#letters-guessed {
+	font-size: 1.5em;
+	height: 1.5em;
+
+}
